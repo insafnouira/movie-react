@@ -1,0 +1,22 @@
+.star{
+    margin-right: 12%;
+    margin-left: -35%;
+    color: grey;
+    font-size: 20px;
+    
+   
+}
+ .rating{
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+ }
+ .star p{
+    font-size: 14px; 
+ }
+ 
+.button1{
+    background-color:  #ff3399 !important;
+    border: transparent !important;
+    width: 20% !important;
+} 
