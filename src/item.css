@@ -24,3 +24,15 @@
      margin-top:  150px;
      
  }   
+
+ .sweet-loading{
+     margin-top: 220px;
+ }
+ .button-Remove{
+     background: rgb(175, 174, 174);
+     color: #ff3399;
+     border: transparent;
+     
+     height: 34px;
+     width: 45%;
+ }

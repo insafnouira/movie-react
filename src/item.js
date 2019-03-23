@@ -10,11 +10,12 @@ class Item extends Component {
        };
       
 }
+
   
     render() { 
       
 
-        const {item}=this.props
+        const {item,id}=this.props
         return ( 
          
         <Card style={{ width: '18rem' }}>
@@ -26,7 +27,6 @@ class Item extends Component {
                 name="rate1" 
                 starCount={5}
                 value={item.rating}
-                
 
             />
     
@@ -34,8 +34,12 @@ class Item extends Component {
         
         <Card.Body>
           <Card.Title className='name'>{item.name}</Card.Title>
-          <Card.Text className='desc'>{item.paragraphe}</Card.Text>
+          <Card.Text className='desc'>{item.descp}</Card.Text>
+          
         </Card.Body>
+        <Card.Footer>
+            <button className='button-Remove'  onClick={()=>this.props.removeMovie(id)}>Remove</button>
+        </Card.Footer>
       </Card> 
       );
     }

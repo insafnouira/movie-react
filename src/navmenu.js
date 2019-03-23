@@ -11,8 +11,8 @@ import ModalAdd from './modal';
     }
    
     handelchange=(event)=>{
-      this.setState({keyword:event.target.value});
-      this.props.searchname(this.state.keyword)
+      this.setState({keyword:event.target.value}, ()=>this.props.searchname(this.state.keyword));
+     
       
   }
  
@@ -33,12 +33,14 @@ import ModalAdd from './modal';
               Add movie</Nav.Link>
               
               <ModalAdd show={this.state.modalShow}
-                     onHide={modalClose} />
+                        onHide={modalClose}
+
+                        addMovie={this.props.addMovie} />
 
            </Nav>
            <Form inline>
              <Rating searcRating={val=>this.props.searcRating(val)} />
-             <FormControl type="text" placeholder="Search movies" className="mr-sm-2"   onChange={this.handelchange} />
+             <FormControl type="text" placeholder="Search movies" className="mr-sm-2"  value={this.state.keyword} onChange={this.handelchange} />
              <Button variant="outline-success">Search</Button>
            </Form>
          </Navbar.Collapse>

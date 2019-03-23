@@ -13,6 +13,8 @@ class Rating extends React.Component {
   }
  
   onStarClick(nextValue, prevValue, name) {
+    console.log(nextValue)
+
     this.setState({rating: nextValue})
     this.props.searcRating(nextValue)
 
@@ -24,13 +26,13 @@ class Rating extends React.Component {
     
     return (                
       <div className='star'>
-        <p>Search movies with Rating</p>
+        <p>Search Movies Rating</p>
         <StarRatingComponent 
           name="rate1" 
           starCount={5}
           value={rating}
           
-          onChange={this.handelchange2}
+          
           onStarClick={this.onStarClick.bind(this)}
         />
       </div>
