@@ -99,7 +99,7 @@ class App extends Component {
 
   removeMovie=(id)=>
   {
-      this.setState({ news:this.state.news.filter((el,index)=>(index!==id))})
+      this.setState({ news:this.state.news.filter((el,index)=>(index !== id))})
   }       
       
    
@@ -117,7 +117,7 @@ class App extends Component {
        <Liste news={this.state.news}
               isloading={this.state.isloading}
               newdata={this.state.newdata}
-              removeMovie={(id)=>this.removeMovie(id)} /> 
+              removeMovie={this.removeMovie} /> 
        
       </div>
     );

@@ -29,9 +29,9 @@
      margin-top: 220px;
  }
  .button-Remove{
-     background: rgb(175, 174, 174);
-     color: #ff3399;
-     border: transparent;
+     background: rgb(73, 73, 73) !important;
+     color: white !important;
+     border: transparent !important;
      
      height: 34px;
      width: 45%;

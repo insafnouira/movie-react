@@ -7,11 +7,11 @@ import Hoc from './hoc'
 
 
 
-const Liste=({news})=>{
+const Liste=({news,removeMovie})=>{
     
 
     return(<div className='list'>
-        {news.map((el,index)=>{return<Item  key={index}  item={el}  id={index} removeMovie={(id)=>this.props.removeMovie(id)} />})}
+        {news.map((el,index)=>{return<Item  key={index}  item={el}  id={index} removeMovie={removeMovie} />})}
        
     </div>)
 }

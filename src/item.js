@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
-import { Card} from 'react-bootstrap';
+import {Card} from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+
 import StarRatingComponent from 'react-star-rating-component'
 import './item.css'
 class Item extends Component {
@@ -17,7 +19,7 @@ class Item extends Component {
 
         const {item,id}=this.props
         return ( 
-         
+        <div>
         <Card style={{ width: '18rem' }}>
         <Card.Img variant="top" src={item.image} alt='No Image Available' className='image'/>
         
@@ -37,10 +39,12 @@ class Item extends Component {
           <Card.Text className='desc'>{item.descp}</Card.Text>
           
         </Card.Body>
-        <Card.Footer>
-            <button className='button-Remove'  onClick={()=>this.props.removeMovie(id)}>Remove</button>
-        </Card.Footer>
+            
+        
       </Card> 
+
+      <Button className='button-Remove' onClick={()=>this.props.removeMovie(id)} >Remove</Button>
+      </div>
       );
     }
 }
