@@ -19,7 +19,7 @@ const data=[
     id:'2',
     image: 'http://images.fandango.com//mdcsite/images/featured/201809/fan_thepredator2018_blog_20180916.jpg',
     name:'Next Three Horror Franchise Movies  ',
-    descp:'From Halloween to a Shining prequel, here are the next three movies that are connected to popular horror franchises.',
+    descp:'From Halloween to a Shining prequel, here are the next three movies that  horror franchises.',
     
     rating:4
   },
@@ -44,7 +44,7 @@ const data=[
     id:'5',
     image: 'https://m.media-amazon.com/images/M/MV5BMTY1OTA2MjI5OV5BMl5BanBnXkFtZTgwNzkxMjU4NjM@._V1_UY268_CR3,0,182,268_AL_.jpg',
     name:' Glass',
-    descp:'Security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities.',
+    descp:'Security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb,  personalities.',
     
     rating:3
   },

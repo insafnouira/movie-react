@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Card} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 import StarRatingComponent from 'react-star-rating-component'
 import './item.css'
@@ -37,7 +38,7 @@ class Item extends Component {
         <Card.Body>
           <Card.Title className='name'>{item.name}</Card.Title>
           <Card.Text className='desc'>{item.descp}</Card.Text>
-          
+
         </Card.Body>
             
         
